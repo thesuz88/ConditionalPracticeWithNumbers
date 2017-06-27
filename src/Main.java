@@ -11,10 +11,12 @@ public class Main {
         userNum = scan.nextInt();
 
         if (userNum % 2 == 0) {
-            System.out.println("Even");
+            if (userNum >= 2 && userNum <= 24) {
+                System.out.println("Even and less than 25.");
+            }
         }
         else {
-            System.out.println("Odd");
+            System.out.println(userNum + " Odd");
         }
     }
 }
