@@ -62,7 +62,7 @@ public class Main {
 
             }
             else {
-                // If the user
+                // Iterates if the user enters a number outside 1 to 100
                 System.out.println("Clearly you need help with your numbers, " + userName +
                         ". The number you entered is not between 1 and 100. ");
             }
