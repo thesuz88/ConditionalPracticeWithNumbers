@@ -1,6 +1,7 @@
 import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.util.Scanner;
+import java.lang.String;
 
 public class Main {
 
@@ -15,6 +16,7 @@ public class Main {
 
         int userNum = 0;
 
+        String doAgain;
         do {
             System.out.println("Enter a whole number between 1 and 100: ");
 
@@ -53,10 +55,14 @@ public class Main {
 
             }
             else {
-                System.out.println("Number entered is not between 1 and 100. Please reenter number: ");
+                System.out.println("Number entered is not between 1 and 100. ");
             }
-            
+
+
+            System.out.println("Would you like to enter another number (type y/n)?");
+            doAgain = scan.next();
+
             // Loop keeps iterating...need to figure out how to quit loop with command.
-        } while (true);
+        } while (doAgain.equalsIgnoreCase("y"));
     }
 }
