@@ -14,9 +14,18 @@ public class Main {
             if (userNum >= 2 && userNum <= 24) {
                 System.out.println("Even and less than 25.");
             }
+            else if (userNum >= 26 && userNum <= 60) {
+                System.out.println("Even.");
+            }
+            else {
+                System.out.println(userNum + " Even.");
+            }
+        }
+        else if (userNum % 2 != 0 && userNum > 60){
+            System.out.println("Odd and over 60.");
         }
         else {
-            System.out.println(userNum + " Odd");
+            System.out.println("Odd.");
         }
     }
 }
